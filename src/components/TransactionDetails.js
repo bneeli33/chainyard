@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Moment from 'moment';
-import { List, ListItem, ListItemText, Chip } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
+import {
+  List,
+  ListItem,
+  ListItemText,
+  Chip,
+  Typography
+} from '@material-ui/core';
 
 const TransactionDetails = ({ transaction }) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -63,26 +68,6 @@ const TransactionDetails = ({ transaction }) => {
                     )}
                   />
                 </ListItem>
-                {/* <div>
-                    <p>Result:</p>
-                    <p>Status:</p>
-                    <p>Block:</p>
-                    <p>Time:</p>
-                  </div> */}
-                {/* <div>
-                    <p>{transactionDetails.contractRet}</p>
-                    <p>
-                      {transactionDetails.confirmed
-                        ? 'Confirmed'
-                        : 'Unconfirmed'}
-                    </p>
-                    <p>{transactionDetails.block}</p>
-                    <p>
-                      {Moment(transactionDetails.timestamp).format(
-                        'MM/DD/YYYY kk:mm:ss'
-                      )}
-                    </p>
-                  </div> */}
               </div>
             </div>
           </div>

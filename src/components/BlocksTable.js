@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Moment from 'moment';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
-import Chip from '@material-ui/core/Chip';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
+  Chip
+} from '@material-ui/core';
 
 const BlocksTable = ({ isLoaded, blocks }) => {
   const [dateNow, setDateNow] = useState(Moment(new Date()));
@@ -45,7 +47,9 @@ const BlocksTable = ({ isLoaded, blocks }) => {
               return (
                 <TableRow key={block.number}>
                   <TableCell>
-                    <Link to={'/block/' + block.number} variant="primary">{block.number}</Link>
+                    <Link to={'/block/' + block.number} variant="primary">
+                      {block.number}
+                    </Link>
                   </TableCell>
                   <TableCell>
                     {minutes > 0 ? `${minutes}mins ` : ''}

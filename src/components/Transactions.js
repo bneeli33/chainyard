@@ -2,11 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import TransactionsTable from './TransactionsTable';
-import Typography from '@material-ui/core/Typography';
+import { Typography, MenuItem, Select, FormControl } from '@material-ui/core';
 import Pagination from '@material-ui/lab/Pagination';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
 
 const Transactions = () => {
   const URL = 'https://apilist.tronscan.org/api/transaction';

@@ -1,7 +1,7 @@
 import React from 'react';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
 import Transactions from './components/Transactions';
 import Blocks from './components/Blocks';
 import BlockDetails from './components/BlockDetails';
@@ -11,7 +11,6 @@ import Container from '@material-ui/core/Container';
 function App() {
   return (
     <div>
-      <div></div>
       <Container>
         <Router>
           <Navbar />
@@ -25,10 +24,6 @@ function App() {
               exact
               component={TransactionDetails}
             />
-            {/* <Transactions path="/transactions" />
-          <Blocks path="/blocks" />
-          <BlockDetails path="/block/:block" />
-          <TransactionDetails path="/transaction/:transaction" /> */}
           </Switch>
         </Router>
       </Container>

@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Moment from 'moment';
-import { List, ListItem, ListItemText } from '@material-ui/core';
-import Chip from '@material-ui/core/Chip';
-import Typography from '@material-ui/core/Typography';
-// import ListItem from '@material-ui/core/ListItem';
-// import ListItemText from '@material-ui/core/ListItemText';
+import {
+  List,
+  ListItem,
+  ListItemText,
+  Chip,
+  Typography
+} from '@material-ui/core';
 
 const BlockDetails = ({ block }) => {
   const [isLoaded, setIsLoaded] = useState(false);
